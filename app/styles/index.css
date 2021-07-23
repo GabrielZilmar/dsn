@@ -53,22 +53,21 @@ a {
   opacity: 1;
 }
 
-#description {
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 5em;
+.description {
+  display: flex;
+  justify-content: space-around;
 }
 
 #helpAlgorithm {
+  margin-top: 5em;
   max-width: 68em;
-  display: inline-flex;
   height: 23px;
   color: #888888;
   font: normal normal normal 20px/24px Helvetica Neue;
 }
 
 .container {
-  display: inline-flex;
+  display: flex;
   width: 100%;
   max-width: 68em;
   justify-content: space-between;
@@ -145,8 +144,11 @@ a {
     padding: 4px 12px;
   }
 
-  #description {
+  .description {
     padding: 10px;
+  }
+
+  #helpAlgorithm {
     margin-top: 3em;
   }
 
