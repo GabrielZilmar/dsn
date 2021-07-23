@@ -53,10 +53,15 @@ a {
   opacity: 1;
 }
 
+#description {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5em;
+}
+
 #helpAlgorithm {
   max-width: 68em;
-  margin-top: 8em;
-  text-align: left;
+  display: inline-flex;
   height: 23px;
   color: #888888;
   font: normal normal normal 20px/24px Helvetica Neue;
@@ -65,7 +70,6 @@ a {
 .container {
   display: inline-flex;
   width: 100%;
-  margin: 0 auto;
   max-width: 68em;
   justify-content: space-between;
 }
@@ -104,7 +108,6 @@ a {
 }
 
 .label {
-  width: 100%;
   text-align: left;
   font: normal normal normal 12px/14px Helvetica Neue;
   color: #888888;
@@ -112,6 +115,7 @@ a {
 }
 
 .send {
+  width: 100%;
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
   border-radius: 4px;
@@ -121,6 +125,7 @@ a {
 /* Mobile */
 @media screen and (max-width: 760px) {
   #header {
+    /* width: 100%; */
     height: 280px;
     padding: 0 30px;
     background: #707070 0% 0% no-repeat padding-box;
@@ -140,8 +145,12 @@ a {
     padding: 4px 12px;
   }
 
+  #description {
+    padding: 10px;
+    margin-top: 3em;
+  }
+
   .container {
-    margin: 4em 0.6em 0 0.6em;
     flex-direction: column;
   }
 

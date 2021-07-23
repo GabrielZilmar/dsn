@@ -16,7 +16,7 @@
 
   <body>
     <header id="header">
-      <div style="width: 50em">
+      <div>
         <p>uma seleção de produtos</p>
         <h1>especial para você</h1>
         Todos os produtos desta lista foram selecionados a partir da sua
@@ -30,7 +30,7 @@
       </div>
     </header>
 
-    <section>
+    <section id="description">
       <h1 id="helpAlgorithm">Ajude o algorítimo a ser mais certeiro</h1>
       <div class="container">
         <p>
@@ -59,7 +59,13 @@
           <input type="email" id="email" name="email" value="" /><br />
           <label class="label" for="cpf">CPF:</label><br />
           <input type="cpf" id="cpf" name="cpf" value="" /><br />
-          <div style="display: flex; justify-content: space-between">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              padding: 0.6em;
+            "
+          >
             <div>
               <input
                 class="checkboxRound"
