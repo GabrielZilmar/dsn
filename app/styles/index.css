@@ -151,6 +151,13 @@ a {
   margin-left: 0.25em;
 }
 
+#products {
+  display: flex;
+  justify-content: space-between;
+  justify-items: start;
+  flex-wrap: wrap;
+}
+
 /* Mobile */
 @media screen and (max-width: 760px) {
   /* Header */
