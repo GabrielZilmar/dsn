@@ -17,11 +17,12 @@ function getProducts(url) {
       const content = `
         <div id="collapse-${idx}" class="collapse show" aria-labelledby="heading-${idx}" data-parent="#accordion">
           <div class="product">  
-            <h5>${result.name}</h5>
-            <p >${result.description}</p>
-            <p>De: ${result.oldPrice}</p>
-            <p>Por: ${result.price}</p>
-            <button class="send" type="button">Comprar</button>
+            <h5 style="height: 0px">${result.name}</h5>
+            <p style="height: 0px">${result.description}</p>
+            <p class="oldPrice">De: R$${result.oldPrice}</p>
+            <p class="price">Por: R$${result.price}</p>
+            <p class="oldPrice">ou 2x de R$${result.price / 2}</p>
+            <button class="send" type="button" style="height: 30px;">Comprar</button>
           </div>
         </div>
       `;
