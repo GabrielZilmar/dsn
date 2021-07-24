@@ -153,10 +153,10 @@ a {
 }
 
 #products {
-  display: flex;
-  justify-content: space-between;
-  justify-items: start;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 40px 40px;
+  margin: 0 auto;
 }
 
 #products p {
@@ -172,8 +172,12 @@ a {
   flex-wrap: wrap;
   border: 1px solid red;
   height: 200px;
-  width: 280px;
+  width: 201px;
   margin-top: 2em;
+}
+
+.product img {
+  border: 1px solid green;
 }
 
 /* Mobile */
@@ -216,5 +220,11 @@ a {
 
   .container p {
     width: 310px;
+  }
+
+  #products {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
   }
 }

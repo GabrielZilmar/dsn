@@ -15,7 +15,7 @@ request.onload = function () {
       <div id="collapse-${idx}" class="collapse show" aria-labelledby="heading-${idx}" data-parent="#accordion">
         <div class="product">  
           <h5>${result.name}</h5>
-          <p>${result.description}</p>
+          <p >${result.description}</p>
           <p>De: ${result.oldPrice}</p>
           <p>Por: ${result.price}</p>
           <button class="send" type="button">Comprar</button>
