@@ -18,7 +18,7 @@ function getProducts(url) {
         <div id="collapse-${idx}" class="collapse show" aria-labelledby="heading-${idx}" data-parent="#accordion">
           <div class="product">  
             <h5 style="height: 0px">${result.name}</h5>
-            <p style="height: 0px">${result.description}</p>
+            <p style="margin-bottom:-20px">${result.description}</p>
             <p class="oldPrice">De: R$${result.oldPrice}</p>
             <p class="price">Por: R$${result.price}</p>
             <p class="oldPrice">ou 2x de R$${result.price / 2}</p>
