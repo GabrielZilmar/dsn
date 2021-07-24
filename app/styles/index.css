@@ -180,8 +180,7 @@ a {
 .product {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid red;
-  height: 280px;
+  height: 350px;
   width: 201px;
   margin-top: 2em;
 }
@@ -197,12 +196,12 @@ a {
 }
 
 .product img {
-  border: 1px solid green;
+  height: 150px;
 }
 
 #moreProducts {
   width: 50%;
-  margin: 3em auto 0 auto;
+  margin: 4em auto 0 auto;
   height: 30px;
 }
 
@@ -257,6 +256,5 @@ a {
 
   .product {
     width: 100%;
-    height: 129px;
   }
 }
