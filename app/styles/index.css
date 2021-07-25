@@ -272,4 +272,9 @@ a {
   .product {
     width: 100%;
   }
+
+  /* Share */
+  #formShare input {
+    width: 100%;
+  }
 }
