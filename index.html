@@ -56,15 +56,15 @@
             <div style="display: flex; justify-content: space-between; padding: 0.6em">
               <div>
                 <input class="checkboxRound" type="radio" id="male" name="gender" />
-                <label class="label" for="gender">Masculino</label>
+                <label class="label">Masculino</label>
               </div>
               <div>
-                <input class="checkboxRound" type="radio" id="feminine" name="gender" />
-                <label class="label" for="gender">Feminino</label>
+                <input class="checkboxRound" type="radio" id="female" name="gender" />
+                <label class="label">Feminino</label>
                 <br /><br />
               </div>
             </div>
-            <button class="send" type="button">Enviar</button>
+            <button class="send" type="button" onclick="register()">Enviar</button>
           </form>
         </div>
       </div>
@@ -105,12 +105,14 @@
         <div class="container" style="width: auto">
           <form id="formShare">
             <label class="label" for="fname">Nome do seu amigo:</label>
-            <input type="text" id="fname" name="fname" value="" />
+            <input type="email" id="fname" name="fname" value="" />
             <label class="label" for="femail">E-mail dele:</label>
             <input type="text" id="femail" name="femail" value="" />
             <br /><br />
             <div style="display: flex; justify-content: center">
-              <button class="send" style="padding: 8px; width: 50%" type="button">Enviar agora</button>
+              <button class="send" style="padding: 8px; width: 50%" type="button" onclick="shareNew()">
+                Enviar agora
+              </button>
             </div>
           </form>
         </div>
