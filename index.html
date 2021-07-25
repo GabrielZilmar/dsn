@@ -5,13 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Teste DSN</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="./app/styles/index.css"
-    />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./app/styles/index.css" />
+    <script src="./app/scripts/main.js"></script>
   </head>
 
   <body>
@@ -19,8 +14,7 @@
       <div>
         <p>uma seleção de produtos</p>
         <h1>especial para você</h1>
-        Todos os produtos desta lista foram selecionados a partir da sua
-        navegação. Aproveite!
+        Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!
         <div id="cards">
           <a class="card" href="#">Conheça a Linx</a>
           <a class="card" href="#">Ajude o algorítimo</a>
@@ -31,68 +25,93 @@
     </header>
 
     <section>
-      <div class="description">
+      <div class="box">
         <div class="container">
           <h1 id="helpAlgorithm">Ajude o algorítimo a ser mais certeiro</h1>
         </div>
       </div>
-      <div class="description">
+      <div class="box">
         <div class="container">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque ultricies tellus nec mi porta convallis sollicitudin eu
-            urna. Mauris rhoncus erat sed interdum dignissim. Suspendisse semper
-            pretium consectetur. Praesent bibendum arcu risus, sit amet iaculis
-            ex tempus quis. Cras et erat ut tellus vulputate tincidunt. Aenean
-            lacinia euismod augue vel egestas. Class aptent taciti sociosqu ad
-            litora torquent per conubia nostra, per inceptos himenaeos.
-            Vestibulum vel urna tortor. Vivamus et arcu non felis tristique
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus nec mi porta
+            convallis sollicitudin eu urna. Mauris rhoncus erat sed interdum dignissim. Suspendisse semper pretium
+            consectetur. Praesent bibendum arcu risus, sit amet iaculis ex tempus quis. Cras et erat ut tellus vulputate
+            tincidunt. Aenean lacinia euismod augue vel egestas. Class aptent taciti sociosqu ad litora torquent per
+            conubia nostra, per inceptos himenaeos. Vestibulum vel urna tortor. Vivamus et arcu non felis tristique
             eleifend.
             <br /><br />
-            Morbi eu condimentum urna. Curabitur eu magna eget turpis
-            condimentum ultrices. Suspendisse quis lorem ultricies, pulvinar
-            purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra.
-            Quisque ut neque mattis, consequat velit ut, ultrices orci. Nulla
-            varius elementum erat vel pharetra. Aenean sit amet nisi diam. Morbi
-            viverra, magna ac luctus commodo, odio ante suscipit libero, at
-            mattis augue est vel metus.
+            Morbi eu condimentum urna. Curabitur eu magna eget turpis condimentum ultrices. Suspendisse quis lorem
+            ultricies, pulvinar purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra. Quisque ut neque
+            mattis, consequat velit ut, ultrices orci. Nulla varius elementum erat vel pharetra. Aenean sit amet nisi
+            diam. Morbi viverra, magna ac luctus commodo, odio ante suscipit libero, at mattis augue est vel metus.
           </p>
-          <form class="formRegister">
+          <form id="formRegister">
             <!-- action="/action_page.php" -->
-            <label class="label" for="fname">Seu nome:</label><br />
-            <input type="text" id="fname" name="fname" value="" /><br />
+            <label class="label" for="name">Seu nome:</label><br />
+            <input type="text" id="name" name="name" value="" /><br />
             <label class="label" for="email">E-mail:</label><br />
             <input type="email" id="email" name="email" value="" /><br />
             <label class="label" for="cpf">CPF:</label><br />
             <input type="cpf" id="cpf" name="cpf" value="" /><br />
-            <div
-              style="
-                display: flex;
-                justify-content: space-between;
-                padding: 0.6em;
-              "
-            >
+            <div style="display: flex; justify-content: space-between; padding: 0.6em">
               <div>
-                <input
-                  class="checkboxRound"
-                  type="checkbox"
-                  id="male"
-                  name="male"
-                />
-                <label class="label" for="male">Masculino</label>
+                <input class="checkboxRound" type="radio" id="male" name="gender" />
+                <label class="label" for="gender">Masculino</label>
               </div>
               <div>
-                <input
-                  class="checkboxRound"
-                  type="checkbox"
-                  id="feminine"
-                  name="feminine"
-                />
-                <label class="label" for="feminine">Feminino</label>
+                <input class="checkboxRound" type="radio" id="feminine" name="gender" />
+                <label class="label" for="gender">Feminino</label>
                 <br /><br />
               </div>
             </div>
-            <input class="send" type="submit" value="Enviar" />
+            <button class="send" type="button">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="box">
+        <div class="container" style="display: block">
+          <div class="separator">Sua seleção especial</div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="container">
+          <div id="products">
+            <!-- Dynamic generation -->
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="container">
+          <button id="moreProducts" onclick="changePage()" class="send" type="button">Ainda mais produtos aqui!</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="box">
+        <div class="container" style="display: block">
+          <div class="separator">Compartilhe a novidade</div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="container" style="width: auto">
+          <h4>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</h4>
+        </div>
+      </div>
+      <div class="box">
+        <div class="container" style="width: auto">
+          <form id="formShare">
+            <label class="label" for="fname">Nome do seu amigo:</label>
+            <input type="text" id="fname" name="fname" value="" />
+            <label class="label" for="femail">E-mail dele:</label>
+            <input type="text" id="femail" name="femail" value="" />
+            <br /><br />
+            <div style="display: flex; justify-content: center">
+              <button class="send" style="padding: 8px; width: 50%" type="button">Enviar Agora</button>
+            </div>
           </form>
         </div>
       </div>
