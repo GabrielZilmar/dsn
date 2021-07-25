@@ -25,12 +25,12 @@
     </header>
 
     <section>
-      <div class="description">
+      <div class="box">
         <div class="container">
           <h1 id="helpAlgorithm">Ajude o algorítimo a ser mais certeiro</h1>
         </div>
       </div>
-      <div class="description">
+      <div class="box">
         <div class="container">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus nec mi porta
@@ -45,10 +45,10 @@
             mattis, consequat velit ut, ultrices orci. Nulla varius elementum erat vel pharetra. Aenean sit amet nisi
             diam. Morbi viverra, magna ac luctus commodo, odio ante suscipit libero, at mattis augue est vel metus.
           </p>
-          <form class="formRegister">
+          <form id="formRegister">
             <!-- action="/action_page.php" -->
-            <label class="label" for="fname">Seu nome:</label><br />
-            <input type="text" id="fname" name="fname" value="" /><br />
+            <label class="label" for="name">Seu nome:</label><br />
+            <input type="text" id="name" name="name" value="" /><br />
             <label class="label" for="email">E-mail:</label><br />
             <input type="email" id="email" name="email" value="" /><br />
             <label class="label" for="cpf">CPF:</label><br />
@@ -71,19 +71,19 @@
     </section>
 
     <section>
-      <div class="description">
+      <div class="box">
         <div class="container" style="display: block">
           <div class="separator">Sua seleção especial</div>
         </div>
       </div>
-      <div class="description">
+      <div class="box">
         <div class="container">
           <div id="products">
             <!-- Dynamic generation -->
           </div>
         </div>
       </div>
-      <div class="description">
+      <div class="box">
         <div class="container">
           <button id="moreProducts" onclick="changePage()" class="send" type="button">Ainda mais produtos aqui!</button>
         </div>
@@ -91,9 +91,28 @@
     </section>
 
     <section>
-      <div class="description">
+      <div class="box">
         <div class="container" style="display: block">
           <div class="separator">Compartilhe a novidade</div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="container" style="width: auto">
+          <h4>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</h4>
+        </div>
+      </div>
+      <div class="box">
+        <div class="container" style="width: auto">
+          <form id="formShare">
+            <label class="label" for="fname">Nome do seu amigo:</label>
+            <input type="text" id="fname" name="fname" value="" />
+            <label class="label" for="femail">E-mail dele:</label>
+            <input type="text" id="femail" name="femail" value="" />
+            <br /><br />
+            <div style="display: flex; justify-content: center">
+              <button class="send" style="padding: 8px; width: 50%" type="button">Enviar Agora</button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
